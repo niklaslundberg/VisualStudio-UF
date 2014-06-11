@@ -1,0 +1,8 @@
+﻿@model WebApplication2.Models.ListViewModel
+
+<ul>
+    @foreach (var greeting in Model.Greetings)
+    {
+        <li>@greeting.Name</li>
+    }
+</ul>

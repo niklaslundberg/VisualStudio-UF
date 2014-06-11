@@ -1,0 +1,11 @@
+﻿@model string
+<h1>Hello @Model</h1>
+
+<div>
+    @using (Html.BeginForm("Index", "Test", FormMethod.Post))
+    {
+        <input type="text" name="name" />
+
+        <input type="submit" value="Send" />
+    }
+</div>

@@ -1,0 +1,20 @@
+﻿<Window x:Class="WpfApplication1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525">
+    <Window.Resources>
+        <DataTemplate x:Key="DataTemplate1">
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="{Binding Time}" Width="200"></TextBlock>
+                <TextBlock Text="{Binding Subject}"></TextBlock>
+            </StackPanel>
+        </DataTemplate>
+    </Window.Resources>
+    <Grid>
+        <StackPanel>
+            <Button Content="Show schedule" Click="Button_Click"/>
+
+            <ListBox ItemTemplate="{DynamicResource DataTemplate1}" ItemsSource="{Binding Mode=OneWay}"/>
+        </StackPanel>
+    </Grid>
+</Window>
