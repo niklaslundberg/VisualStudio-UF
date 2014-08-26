@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <h1>Data format</h1>
+
+    <p>
+        The <a href="schedule">schedule data</a> is in JSON format (application/json)
+    </p>
+    <p>
+        <ul>
+            <li>[...] array of schedule item</li>
+            <li>[Schedule item:
+            
+                <ul>
+
+                    <li>
+                        Teachers: string array
+                    </li>
+                    <li>
+                        StartTimeUtc: start time defined in UTC time in ISO 8601 string format
+                    </li>
+                    <li>
+                        Duration: a timespan (dd:HH:mm)
+                    </li>
+                    <li>
+                        Class: the group identity as string
+                    </li>
+                    <li>
+                        Room: the room identity as string
+                    </li>
+                    <li>
+                        Title: subject as string
+                    </li>
+                </ul>
+            
+            </li>
+            
+        </ul>
+        
+
+    </p>
+</body>
+</html>
