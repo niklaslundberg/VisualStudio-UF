@@ -8,6 +8,10 @@
 
 http://msdn.microsoft.com/sv-SE/library/windows/apps/hh974581.aspx
 
+## Sample schedule data
+
+http://ufdemo.azurewebsites.net
+
 ## F&#35;
 
 * http://www.tryfsharp.org/
