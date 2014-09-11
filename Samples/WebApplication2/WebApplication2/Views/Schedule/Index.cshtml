@@ -1,0 +1,13 @@
+﻿@model List<WebApplication2.Models.ScheduleItem>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+@foreach (var scheduleItem in Model)
+{
+    <h3>@scheduleItem.Title</h3>
+}
+
